@@ -62,12 +62,16 @@ Un mensaje le indicará la URL en la que puede visualizar en un navegador la apl
 En la página que se abre (`index.html`) verá solamente una página con un texto explicativo.
 Si abre (*Herramientas para desarrolladores*) la consola de esa página verá que en consola se está imprimiendo
 un objeto de JavaScript.
+
 El objeto corresponde con los datos que figuran en 
 [este fichero
 JSON](https://www.santacruzdetenerife.es/opendata/dataset/93b7d1bd-1b21-4f43-9316-671e2021f7fc/resource/0fa54a6d-35ef-41c1-ab1c-9af6efe0e9f0/download/canchas_deportivas.json)
-disponible a través del 
+que también puede visualizar en este 
+[otro enlace](https://www.santacruzdetenerife.es/opendata/dataset/canchas-deportivas/resource/0fa54a6d-35ef-41c1-ab1c-9af6efe0e9f0)
+y que está disponible a través del 
 [portal de datos del Ayuntamiento de Santa
-Cruz](https://www.santacruzdetenerife.es/opendata/dataset/canchas-deportivas/resource/0fa54a6d-35ef-41c1-ab1c-9af6efe0e9f0)
+Cruz](https://www.santacruzdetenerife.es/web/gobierno-abierto/opendata)
+
 y que muestra la ubicación de canchas deportivas en el municipio.
 
 Estudie los comentarios que figuran en la cabecera de los ficheros `read-json.ts` (directorio `www` de la
