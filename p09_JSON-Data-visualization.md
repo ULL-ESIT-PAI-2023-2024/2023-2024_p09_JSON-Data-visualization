@@ -4,7 +4,6 @@
 ### Objetivos
 Los objetivos de esta tarea son poner en práctica:
 * Gestión de ficheros remotos en formato JSON.
-* Practicar con CSS básico.
 * Manipulación, gestión, análisis y representación de datos.
 * Conceptos básicos de Programación Gráfica en TypeScript usando la API Canvas.
 
@@ -45,8 +44,8 @@ La aplicación que desarrolle ha de ser orientada a objetos.
 Ponga en práctica en su desarrollo los fundamentos, principios y buenas prácticas de la OOP así como los
 conocimientos que haya adquirido en el uso de patrones de diseño.
 
-Configure adecuadamente ficheros `package.json` y `tsconfig.json` en el directorio raíz de su ejercicio, 
-de modo que ejecutando `npm install` queden instaladas todas las dependencias del proyecto.
+Configure adecuadamente ficheros `package.json` y `tsconfig.json` en el directorio raíz de su proyecto, 
+de modo que se contemplen todas las dependencias del proyecto.
 
 ### Lectura de datos en formato JSON desde un servidor remoto
 
@@ -54,21 +53,22 @@ En el directorio `read-JSON-app` de esta práctica puede hallar un ejemplo de ap
 fichero en formato JSON alojado en un servidor remoto.
 Comience por ejecutar `npm install` para instalar los paquetes necesarios para la aplicación.
 
-A continuación, ejecute `tsc` en el directorio `www` para compilar la aplicación `read-json.ts` de ese
-directorio. 
+A continuación, ejecute `tsc` en el directorio `www` para compilar la aplicación `read-json.ts` de ese directorio. 
 La compilación generará el fichero `read-json.js` que se enlaza en la página `index.html` que se encuentra en
 ese mismo directorio y que será el punto de entrada de la aplicación de ejemplo.
 
-Ejecute `npm start` para iniciar la aplicación.
+A continuación, en el directorio `read-JSON-app`, ejecute `npm start` para iniciar la aplicación.
 Un mensaje le indicará la URL en la que puede visualizar en un navegador la aplicación.
 En la página que se abre (`index.html`) verá solamente una página con un texto explicativo.
 Si abre (*Herramientas para desarrolladores*) la consola de esa página verá que en consola se está imprimiendo
-un vector de datos de 1736 componentes.
-Esos datos son los que figuran en 
+un objeto de JavaScript.
+El objeto corresponde con los datos que figuran en 
 [este fichero
-JSON](https://www.tenerifedata.com/dataset/79477ca3-0ed1-4094-a386-b40e2505c8aa/resource/eafae0c8-6d48-4c3e-b2a0-802dac477022/download/poblacion-segun-sexos-y-edades-ano-)
-disponible a través del portal 
-[TenerifeData](https://www.tenerifedata.com/).
+JSON](https://www.santacruzdetenerife.es/opendata/dataset/93b7d1bd-1b21-4f43-9316-671e2021f7fc/resource/0fa54a6d-35ef-41c1-ab1c-9af6efe0e9f0/download/canchas_deportivas.json)
+disponible a través del 
+[portal de datos del Ayuntamiento de Santa
+Cruz](https://www.santacruzdetenerife.es/opendata/dataset/canchas-deportivas/resource/0fa54a6d-35ef-41c1-ab1c-9af6efe0e9f0)
+y que muestra la ubicación de canchas deportivas en el municipio.
 
 Estudie los comentarios que figuran en la cabecera de los ficheros `read-json.ts` (directorio `www` de la
 aplicación) y `app.js` (directorio `web-server`).
