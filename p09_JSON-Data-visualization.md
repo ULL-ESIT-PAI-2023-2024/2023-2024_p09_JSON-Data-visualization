@@ -70,9 +70,8 @@ que también puede visualizar en este
 [otro enlace](https://www.santacruzdetenerife.es/opendata/dataset/canchas-deportivas/resource/0fa54a6d-35ef-41c1-ab1c-9af6efe0e9f0)
 y que está disponible a través del 
 [portal de datos del Ayuntamiento de Santa
-Cruz](https://www.santacruzdetenerife.es/web/gobierno-abierto/opendata)
-
-y que muestra la ubicación de canchas deportivas en el municipio.
+Cruz de Tenerife](https://www.santacruzdetenerife.es/web/gobierno-abierto/opendata).
+El fichero contiene la ubicación de canchas deportivas en el municipio.
 
 Estudie los comentarios que figuran en la cabecera de los ficheros `read-json.ts` (directorio `www` de la
 aplicación) y `app.js` (directorio `web-server`).
@@ -87,22 +86,24 @@ la hora de consumir datos desde un servidor externo (política
 
 Ambos programas utilizan la API 
 [Fetch](https://javascript.info/fetch).
-En el caso del servidor Express, para leer el fichero JSON con datos de población de Tenerife desde una URL
+En el caso del servidor Express, para leer el fichero JSON desde una URL
 externa, y en el caso de la aplicación cliente para leer el fichero JSON desde el *endpoint* `data` que
 se configura en el servidor local.
 
-El programa `read-json-ts` define la interfaz *PopulationData* (podría haberse utilizado una definición de
+El programa `read-json-ts` define la interfaz *CanchasDeportivas* (podría haberse utilizado una definición de
 tipo en lugar de una interfaz) para caracterizar el tipo de datos presentes en el fichero JSON que se va a
 leer.
-Ha de tenerse en cuenta (a) que esta definición se introduce para disponer de un control de tipos de datos más
-exhaustivo (b) que esa aplicación depende directamente del tipo de datos que se pretende leer y que habría que
+Ha de tenerse en cuenta 
+* Que esta definición se introduce para disponer de un control de tipos de datos más
+exhaustivo 
+* Que esa aplicación depende directamente del tipo de datos que se pretende leer y que habría que
 conocer a priori.
 
 No es un objetivo de esta práctica (ni de esta asignatura) el estudio de los protocolos de comunicación ni las
 restricciones y características que intervienen en estas comunicaciones.
 
 El objeto de estos fragmentos de código es ofrecer al alumnado un esqueleto simple que pueden tomar como punto
-de partida para sus propios diseños, siendo el objetivo de esta práctica leer datos (de diverso tipo)
+de partida para sus propios desarrollos, siendo el objetivo de esta práctica leer datos (de diverso tipo)
 procedentes de una URL remota y representarlos y exponerlos gráficamente en un lienzo (canvas) de HTML.
 
 La referencias
@@ -169,8 +170,7 @@ Incluya una tercera página
 
 que muestre el diagrama UML de las clases que intervienen en su aplicación.
 
-Si le resulta útil, utilice lo que haya aprendido de CSS para dotar de estilo propio a las páginas HTML que
-desarrolle.
+Para facilitar la evaluación de su trabajo, haga que todas las páginas web relacionadas con su aplicación incluyan en su cabecera su nombre y apellidos.
 
 ## Referencias
 * [Fetch](https://javascript.info/fetch)
